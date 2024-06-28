@@ -38,7 +38,7 @@ def draw_plot():
 
     # Generate x-values for smooth line (optional, adjust range as needed)
     x_vals, x_vals_length = generate_number_list(1880, 2050, 1)
-    plt.plot(years_for_plot, [fitted_line(y) for y in years_for_plot], 'r-', label='Best Fit Line (all data)')
+    plt.plot(x_vals, [fitted_line(x) for x in x_vals], 'b-', label='Best Fit Line (all data)')
 
     # Create second line of best fit
     #New fitted line function
